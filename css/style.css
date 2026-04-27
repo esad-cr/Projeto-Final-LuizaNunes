@@ -1,0 +1,214 @@
+::selection { /* Optional */
+  /* It can be really hard to read highlighted text with a text-shadow, it should be removed when selected */
+  text-shadow: none;
+  
+  /* NOTE: Using this means the color and background-color are set to transparent for selected text... */
+  /* So you can customise your styles below */
+  color: #050605;
+  background-color: #fff;
+}
+
+html {
+  /* Make base font-size 100% of browser font-size */
+  font-size: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth; /* Smoothly animate to different sections within a page, only if the user doesn't mind animations */
+  }
+}
+
+*,
+*::before,
+*::after,
+html {
+  /* Declare your box-sizing here
+  /* https://css-tricks.com/box-sizing */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* outras opções - content-box */
+}
+
+body {
+  /* Declare your default font stack here */
+  font-family: "Font Stack", sans-serif, serif, monospace, cursive, fantasy;
+  /* outras opções - serif, monospace, cursive, fantasy */
+
+  /* Better text rendering - font-smoothing has not been officially declared, but can still be useful */
+  text-rendering: geometricPrecision;
+  /* outras opções -optimizeLegibility | optimizeSpeed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  /* For responsive images that adjust & adapt */
+  height: auto;
+  max-width: 100%;
+  
+  /* This isn't needed, but as a user, I get frustrated when I highlight text and the image gets highlighted too */
+  user-select: none;
+}
+
+button {
+  color: inherit; /* By default, buttons don't inherit the font colour, this is a useful default to override */
+}
+
+a, button {
+  touch-action: manipulation; /* Element doesn't want double-tap on mobile to zoom */
+}
+
+svg {
+  /* Make the SVGs fit the parent container by default */
+  height: 100%;
+  width: 100%;
+  
+  /* Optional - make the SVG's fill be the same as the inherited color */
+  fill: currentColor;
+  
+  /* Prevent the SVG from altering cursor interaction */
+  pointer-events: none;
+}
+
+iframe, video {
+  /* Make iframes & videos fit the parent container by default */
+  height: 100%;
+  width: 100%
+}
+
+/**************************************************
+***************************************************
+*** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ***
+***************************************************
+***************************************************/
+
+:root{
+  --primary-color: hsl(140, 30%, 25%);
+  --Primary-color-light: hsl(140,30%,35%);
+  --primary-color-dark: hsl(140, 30%, 15%);
+
+  --white-color: #fff
+  --black-color: hsl(0,0%,10%);
+  --body-color: hsl(0,0%,98%);
+
+  /*------font weight-------*/
+  ---font-regular:400;
+  ---font-semi-bold:600;
+
+  /*------- z index---------*/
+  --z-tooltip: 10;
+  --z-fixed:100;
+
+}
+
+/***********Estilos Base***********/
+
+body{
+  font-size: 16px;
+  font-family:"inter", sans-serif;
+  background-color: var(---body-color);
+  
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: inter, sans-serif;
+}
+
+p{
+  font-size: 16px
+}
+
+small{
+  font-size:0.8rem;
+}
+
+strong{
+  font-weight: var(--font-semi-bold);
+}
+
+ul{
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+  color: #050605;
+}
+
+a:hover, a:active, a:active {
+color: var (--primary-color);
+}
+
+/***************** largura dos elementos que compoem o body********************/
+/*Utilizando tags*/
+
+body header, body main, body footer{
+  width:100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* utilizando id*/
+#topheader, #mainContent, #mainFooter{
+  width:100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* utilizando classes*/
+pagewidth{
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/************** Definição da tipografia para mobile**************/
+
+h1{
+  font-size: 2.986rem;
+  font-weight: 700;
+  letter-spacing: 0.22rem;
+  line-height: 1.5;
+}
+
+h2{
+  font-size: 2.488rem;
+  font-weight:700;
+  Line-height: 1,15;
+}
+
+h2{
+  font-size: 2.488rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h3{
+  font-size: 2.074rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/*********************************************
+ Definição tipografia desktop**************/
+ 
+ h1{
+    font-size: 7.993rem;
+  }
+
+  h2{
+    font-size: 5.653rem;
+  }
+
+  h3{
+    font-size: 3.998rem;
+  }
+
+
+
