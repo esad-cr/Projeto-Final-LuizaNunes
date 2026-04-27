@@ -292,13 +292,30 @@ h3{
     transition: top .4s, opacity .3s;
   }
 
-  .nav_menu:: -webkit-scrollbar {
+  .nav_menu:-webkit-scrollbar {
     width: 0;
   }
   .nav_list{
     background-color : var(--white-color);
     padding-top: 1rem
   }
+
+  }
+
+.nav__link {
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color .3s;
+}
+
+.nav__link:hover {
+  color: var(--primary-color);
+}
 
 
 
