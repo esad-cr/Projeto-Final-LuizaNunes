@@ -85,21 +85,24 @@ iframe, video {
 ***************************************************/
 
 :root{
-  --primary-color: hsl(140, 30%, 25%);
+  --primary-color: hsl(203, 67%, 41%);
   --Primary-color-light: hsl(140,30%,35%);
   --primary-color-dark: hsl(140, 30%, 15%);
+  --secondary-color: hsl(140, 20%, 40%);
 
-  --white-color: #fff
+  --white-color: #fff;
   --black-color: hsl(0,0%,10%);
   --body-color: hsl(0,0%,98%);
 
   /*------font weight-------*/
-  ---font-regular:400;
-  ---font-semi-bold:600;
+  ---font-regular: 400;
+  ---font-semi-bold: 600;
 
   /*------- z index---------*/
   --z-tooltip: 10;
-  --z-fixed:100;
+  --z-fixed: 100;
+
+  --header-height: 3.5rem;
 
 }
 
@@ -108,16 +111,16 @@ iframe, video {
 body{
   font-size: 16px;
   font-family:"inter", sans-serif;
-  background-color: var(---body-color);
+  background-color: var(--body-color);
   
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: inter, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 p{
-  font-size: 16px
+  font-size: 16px;
 }
 
 small{
@@ -138,8 +141,23 @@ a{
   color: #050605;
 }
 
-a:hover, a:active, a:active {
-color: var (--primary-color);
+a:hover, a:active {
+color: var(--primary-color);
+}
+
+/***** Espaçador elementos *****/
+
+.space-S{
+  height: 30px;
+}
+.space-M{
+  height: 60px;
+}
+.space-L{
+  height: 90px;
+}
+.space-XL{
+  height: 120px;
 }
 
 /***************** largura dos elementos que compoem o body********************/
@@ -161,17 +179,17 @@ body header, body main, body footer{
 }
 
 /* utilizando classes*/
-pagewidth{
+.pagewidth{
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
-/************** Definição da tipografia para mobile**************/
+ /* Mobile (default) */
 
 h1{
-  font-size: 2.986rem;
+   font-size: 2.986rem;
   font-weight: 700;
   letter-spacing: 0.22rem;
   line-height: 1.5;
@@ -180,14 +198,10 @@ h1{
 h2{
   font-size: 2.488rem;
   font-weight:700;
-  Line-height: 1,15;
+  Line-height: 1.15;
 }
 
-h2{
-  font-size: 2.488rem;
-  font-weight: 700;
-  line-height: 1.15;
-}
+
 
 h3{
   font-size: 2.074rem;
@@ -222,7 +236,7 @@ h3{
 }
 
 #mainMenu {
-  height: var(--header-height);
+  height: var(--header-height) +2;
   width: 100%;
   max-width:1680px;
   margin: 0 auto;
@@ -289,13 +303,14 @@ h3{
     height: calc(100vh - 3.5rem);
     overflow: auto;
     pointer-events: none;
-    transition: top .4s, opacity .3s;
+    opacity: 0;
+    transition: height .4s, opacity .3s;
   }
 
-  .nav_menu:-webkit-scrollbar {
+  .nav__menu::-webkit-scrollbar {
     width: 0;
   }
-  .nav_list{
+  .nav__list{
     background-color : var(--white-color);
     padding-top: 1rem
   }
@@ -316,6 +331,67 @@ h3{
 .nav__link:hover {
   color: var(--primary-color);
 }
+
+/* show menu*/
+.show-menu{
+  opacity: 1;
+  top: 3.5rem;
+  pointer-events: initial;
+}
+
+/*show icon*/
+.show-icon .nav__burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav__close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+/* navigation for large devices*/
+@media screen and (min-width: 992px) {
+  #mainMenu{
+    height: calc(var(--header-height) + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  }
+  .nav__toggle{
+    display: none;
+  }
+  .nav__list{
+    height: 100%;
+    display: flex;
+    column-gap: 3rem;
+  }
+  .nav__link{
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: .25;
+  }
+  .nav__link:hover{
+    background-color: transparent;
+  }
+} 
+
+/***********mainContent***********/
+#mainContent{
+  margin-top:var(--header-height)!important;
+}
+
+@media screen and (min-width: 992px){
+  #mainContent{
+    margin-top:calc(var(--header-height)+2rem)
+  }
+}
+
+
+
+
+
 
 
 
