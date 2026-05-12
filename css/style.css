@@ -89,6 +89,7 @@ iframe, video {
   --Primary-color-light: hsl(140,30%,35%);
   --primary-color-dark: hsl(140, 30%, 15%);
   --secondary-color: hsl(140, 20%, 40%);
+  --third-color: 
 
   --white-color: #fff;
   --black-color: hsl(0,0%,10%);
@@ -224,6 +225,21 @@ h3{
     font-size: 3.998rem;
   }
 
+
+  /******Utilities******/
+
+  .text_center{
+    text-align: center;
+  }
+
+  .white_text{
+    color:var(--white-color);
+  }
+
+  .invert_filter{
+    filter: invert(1);
+  }
+
   /*------------------ HEADER ----------*/
 #topHeader {
   position: fixed;
@@ -357,7 +373,7 @@ h3{
     justify-content: space-between;
   }
 
-  }
+  
   .nav__toggle{
     display: none;
   }
@@ -389,6 +405,80 @@ h3{
 }
 
 
+  /****** cards********Definir o flex/autolayout*******/
+
+  .container{
+    --gap: 0;
+    padding: 2rem;
+  }
+  
+  .flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+
+  .box_shadow{
+    box-shadow: 3px 3px 15px 2px rgba(0, 0, 0, 0.52);
+  }
+
+  .border_radius{
+    border-radius: 8px;
+  }
+
+  .flex-column{
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  /******** Definir as backgrounds colors*******/
+
+  .bg-primary-color {
+    background-color: var(--primary-color);
+  }
+
+  .bg-secondary-color {
+  background-color: var(--secondary-color);      
+  }
+
+  .bg-third-color {
+    background-color: var(--third-color);
+  }
+
+  /************articles estilo card********/
+  .container article:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .container article:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .container article{
+    --gap: 2em;
+    line-height: 1.5;
+    padding: 3em;
+  }
+
+  .container article img{
+    width: 4rem;
+  }
+
+
+  /***********Botões********/
+  .learn-more-button{
+    border: none;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    padding-block: 0.79em;
+    padding-inline: 2.3em;
+    margin: auto;
+    margin-top: 3em;
+    transition: background-color 200ms ease-in-out;
+  }
+
+  .
 
 
 
