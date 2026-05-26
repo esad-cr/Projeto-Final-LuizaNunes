@@ -242,13 +242,17 @@ h3{
 
   /*------------------ HEADER ----------*/
 #topHeader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  background-color: var(--white-color);
- z-index: var(--z-fixed);
+ position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(228, 205, 205, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+body{
+    padding-top: 100px;
 }
 
 #mainMenu {
