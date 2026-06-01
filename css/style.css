@@ -279,11 +279,13 @@ body{
   align-items: center;
   column-gap: .25rem;
   
+  
 }
 #headerLogo a{
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  color: white;
 }
 
 #headerLogo img {
@@ -481,6 +483,13 @@ body{
     transition: background-color 200ms ease-in-out;
   }
 
+/**********Fototer**********/
+
+  footer{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
   
 
 
