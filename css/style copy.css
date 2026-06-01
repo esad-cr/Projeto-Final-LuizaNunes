@@ -85,15 +85,16 @@ iframe, video {
 ***************************************************/
 
 :root{
- --primary-color: #7C3AED;
-  --secondary-color: #06B6D4;
-  --third-color: #F43F5E;
+  --primary-color: hsl(203, 67%, 41%);
+  --Primary-color-light: hsl(140,30%,35%);
+  --primary-color-dark: hsl(140, 30%, 15%);
+  --secondary-color: hsl(140, 20%, 40%);
+  --third-color: 
 
-  --body-color: #0F172A;
+  --white-color: #fff;
+  --black-color: hsl(0,0%,10%);
+  --body-color: hsl(0,0%,98%);
 
-  --white-color: #FFFFFF;
-  --black-color: #0F172A;
-  
   /*------font weight-------*/
   ---font-regular: 400;
   ---font-semi-bold: 600;
@@ -245,7 +246,7 @@ h3{
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(17, 24, 39, 0.9);
+    background: rgba(243, 228, 228, 0.85);
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -330,7 +331,7 @@ body{
     width: 0;
   }
   .nav__list{
-    background-color: transparent;
+    background-color : var(--white-color);
     padding-top: 1rem
   }
 
@@ -338,7 +339,7 @@ body{
 
 .nav__link {
   color: var(--secondary-color);
-  background-color: transparent;
+  background-color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -481,7 +482,7 @@ body{
     transition: background-color 200ms ease-in-out;
   }
 
-  
+  .
 
 
 
