@@ -493,6 +493,53 @@ body{
   
 
 
+/******** ABOUT ME ********/
+
+#aboutMe{
+    padding: 8rem 0;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap:6rem;
+    align-items:center;
+}
+
+.about-text p{
+    color:#8A8A8A;
+    font-size:1.8rem;
+    line-height:1.6;
+    margin-bottom:2rem;
+}
+
+.about-text strong{
+    color:white;
+}
+
+.about-photo{
+    border-left:1px solid rgba(255,255,255,.15);
+    padding-left:4rem;
+}
+
+.about-photo img{
+    width:100%;
+    max-width:400px;
+    filter:grayscale(100%);
+}
+
+.about-photo h3{
+    color:white;
+    margin-top:1rem;
+}
+
+.about-photo small{
+    color:#777;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+
 
 
 
