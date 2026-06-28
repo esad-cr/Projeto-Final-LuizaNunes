@@ -496,6 +496,23 @@ body{
      color:#666; 
 }
   
+/* ===== ABOUT TITLE ===== */
+
+.about-title{ 
+  margin-bottom:1rem; }
+
+.about-title h1{ 
+  font-size:4rem; 
+  font-weight:500; 
+  line-height:1; 
+  letter-spacing:-2px; 
+  color:var(--black-color); 
+  margin-bottom:4rem; } 
+  
+.about-title span{ 
+color:var(--primary-color); 
+}
+
 
 
 /******** ABOUT ME ********/
