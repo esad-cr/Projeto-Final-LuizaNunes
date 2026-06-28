@@ -627,6 +627,16 @@ color:var(--primary-color);
 }
 
 
+/* ---------- RESUME ---------- */ 
+.resume{ 
+  text-align:center; 
+  padding-bottom:5rem; 
+} 
+
+.resume p{ 
+  margin:1.5rem 0 2rem; 
+}
+
 
 
 
