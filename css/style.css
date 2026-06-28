@@ -4,8 +4,8 @@
   
   /* NOTE: Using this means the color and background-color are set to transparent for selected text... */
   /* So you can customise your styles below */
-  color: #050605;
-  background-color: #ffffff;
+  color: #1D1D1D;
+  background-color: #F7F6F3;
 }
 
 html {
@@ -85,14 +85,14 @@ iframe, video {
 ***************************************************/
 
 :root{
- --primary-color: #7C3AED;
-  --secondary-color: #06B6D4;
-  --third-color: #F43F5E;
+ --primary-color: #5A67D8;
+  --secondary-color: #3A86FF;
+  --third-color:  #FF6B6B;
 
-  --body-color: #0F172A;
+  --body-color: #F7F6F3;
 
   --white-color: #FFFFFF;
-  --black-color: #0F172A;
+  --black-color: #1D1D1D;
   
   /*------font weight-------*/
   ---font-regular: 400;
@@ -111,7 +111,9 @@ iframe, video {
 body{
   font-size: 16px;
   font-family:"inter", sans-serif;
+  
   background-color: var(--body-color);
+  color:var(--black-color);
   
 }
 
@@ -232,7 +234,7 @@ h3{
   }
 
   .white_text{
-    color:var(--white-color);
+    color:#1D1D1D;
   }
 
   .invert_filter{
@@ -245,9 +247,9 @@ h3{
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(17, 24, 39, 0.9);
+    background: rgba(247,246,243,.9);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    border-bottom:1px solid #E8E8E8;
 }
 
 body{
@@ -285,8 +287,8 @@ body{
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  color: white;
-}
+  color:#1D1D1D;
+  }
 
 #headerLogo img {
   width: 3rem;
@@ -339,9 +341,9 @@ body{
   }
 
 .nav__link {
-  color: var(--secondary-color);
+  color:#444;
   background-color: transparent;
-  font-weight: var(--font-semi-bold);
+  font-weight:600;
   padding: 1.25rem 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -350,7 +352,7 @@ body{
 }
 
 .nav__link:hover {
-  color: var(--primary-color);
+   color:#3A86FF;
 }
 
 /* show menu*/
@@ -488,7 +490,7 @@ body{
   footer{
     text-align: center;
     padding: 2rem;
-    color: white;
+     color:#666; 
 }
   
 
@@ -507,18 +509,18 @@ body{
 }
 
 .about-text p{
-    color:#8A8A8A;
+    color:#555;
     font-size:1.8rem;
     line-height:1.6;
     margin-bottom:2rem;
 }
 
 .about-text strong{
-    color:white;
+     color:#1D1D1D;
 }
 
 .about-photo{
-    border-left:1px solid rgba(255,255,255,.15);
+   border-left:1px solid #DDDDDD;
     padding-left:4rem;
 }
 
@@ -529,7 +531,7 @@ body{
 }
 
 .about-photo h3{
-    color:white;
+    color:#1D1D1D;
     margin-top:1rem;
 }
 
