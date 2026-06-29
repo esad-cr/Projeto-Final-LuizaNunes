@@ -1011,6 +1011,19 @@ font-size:2rem;
 }
 
 
+/* PROCESSING */
+
+#processingCanvas{
+display:flex;
+justify-content:center;
+align-items:center;
+margin:5rem 0;
+}
+
+#processingCanvas canvas{
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
 
 
 
