@@ -95,8 +95,8 @@ iframe, video {
   --black-color: #074f9b;
   
   /*------font weight-------*/
-  ---font-regular: 400;
-  ---font-semi-bold: 600;
+  --font-regular: 400;
+  --font-semi-bold: 600;
 
   /*------- z index---------*/
   --z-tooltip: 10;
@@ -669,9 +669,7 @@ background: var(--secondary-color);
 }
 
 
-*=========================================
-            PROJECTS PAGE
-=========================================*/
+/*PROJECTS PAGE*/
 
 #projects{
 
@@ -838,9 +836,7 @@ font-size:2rem;
 }
 
 
-/*====================================
-            Project Page
-====================================*/
+/*Project Page*/
 
 #project-page{
 
