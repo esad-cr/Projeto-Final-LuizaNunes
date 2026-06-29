@@ -836,3 +836,62 @@ font-size:2rem;
 
 }
 
+
+
+=================================================
+                PROJECT PAGE
+=================================================*/
+
+#project-page{
+
+    max-width:1200px;
+    margin:0 auto;
+    padding:7rem 0;
+}
+
+
+/* HERO */
+
+.project-hero{
+text-align:center;
+margin-bottom:5rem;
+}
+
+.project-category{
+color:var(--primary-color);
+text-transform:uppercase;
+letter-spacing:3px;
+font-size:.9rem;
+font-weight:700;
+}
+
+.project-hero h1{
+font-size:4rem;
+margin:1.5rem 0;
+font-weight:500;
+letter-spacing:-2px;
+color:var(--black-color);
+}
+
+.project-hero p{
+ max-width:700px;
+ margin:0 auto;
+ line-height:1.9;
+ color:#666;
+ font-size:1.1rem;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image{
+margin:5rem 0;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+
