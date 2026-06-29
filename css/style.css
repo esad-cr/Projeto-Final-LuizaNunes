@@ -678,26 +678,57 @@ background: var(--secondary-color);
     max-width:1200px;
     margin:0 auto;
     padding:8rem 0;
+}
+
+.projects-title{
 
     margin-bottom:6rem;
+}
 
 .projects-title h1{
 
+    font-size:4rem;
+    font-weight:500;
+    letter-spacing:-2px;
+    color:var(--black-color);
+
+    margin-bottom:1.5rem;
 }
 
 .projects-title p{
 
     max-width:700px;
 
+    font-size:1.2rem;
+
+    line-height:1.9;
+
     color:#666;
 }
 
+
+/* PROJECTS CARD */
 
 .project-card{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:5rem;
 align-items:center;
+margin:5rem 0;
+}
+
+
+.project-number{
+display:inline-block;
+color:var(--primary-color);
+font-size:1rem;
+font-weight:700;
+letter-spacing:3px;
+margin-bottom:1rem;
+}
+
+.project-info h2{
+font-size:3rem;
 margin-bottom:.8rem;
 color:var(--black-color);
 }
