@@ -837,10 +837,9 @@ font-size:2rem;
 }
 
 
-
-=================================================
-                PROJECT PAGE
-=================================================*/
+/*====================================
+            Project Page
+====================================*/
 
 #project-page{
 
@@ -885,11 +884,16 @@ color:var(--black-color);
 /* HERO IMAGE */
 
 .hero-image{
+display:flex;
+justify-content:center;
 margin:5rem 0;
 }
 
 .hero-image img{
   width:100%;
+  max-width:900px;
+  max-height:600px;
+  object-fit:cover;
   border-radius:20px;
   box-shadow:0 20px 60px rgba(0,0,0,.08);
 }
@@ -998,12 +1002,10 @@ gap:2rem;
 
 .gallery{
 grid-template-columns:1fr;
-
 }
 
 .project-hero h1{
 font-size:3rem;
-
 }
 
 .project-section h2{
