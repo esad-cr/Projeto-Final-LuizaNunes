@@ -435,6 +435,10 @@ body{
     --gap: 0;
     padding: 2rem;
   }
+
+  .page-hero{
+    padding-top: 8rem;
+}
   
   .flex{
     display: flex;
