@@ -1,0 +1,214 @@
+<!-- Indica ao navegador que este é um documento HTML5 -->
+<!DOCTYPE html>
+<!-- Elemento raiz do documento. O atributo lang="pt-PT" informa que o conteúdo está em português.-->
+<html lang="pt-PT">
+    <head>
+        <!-- Contém informações sobre o documento (meta-informações, título, links para CSS e scripts). -->
+        <meta charset="UTF-8"><!-- Define a codificação para caracteres (acentuação correta) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Torna o site responsivo em dispositivos móveis -->
+        <title>Projeto Final</title>
+        <meta name="author" content="Luiza Nunes"/><!-- Define o autor do site -->
+        <meta name="description" content="Portfólio pessoal de Luiza Nunes" /><!-- Descrição da página (ajuda no SEO) -->
+        <meta name="keywords" content="ESAD.CR, Licenciatura de Mulimédia, Projecto Final" /><!-- Palavras-chave da página (ajuda no SEO) -->
+        <!-- Metadata para chamar o favicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="imagens/favicon-32.png">
+
+    </head>
+    <body>
+        <!-- Contém tudo o que será exibido na página: textos, imagens, links, etc. -->
+        <header id="topHeader" class="pageWidth">
+        <!-- Representa o cabeçalho da página ou de uma seção. Contém títulos, logotipo, menus, etc.-->
+            <nav id="mainMenu">
+                <div class="navAction">
+                    <div id="headerLogo">
+                        <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo sol.svg" alt="Portfolio"><strong>LuizaNunes</strong></a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>    
+                
+                <div class="nav__menu" id="navMenu">
+                    <ul class="nav__list">
+                        <li>
+                            
+                            <a class="nav__link active" href="index.html">Home
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="about-me.html" title="Sobre mim" rel="noopener noreferrer">About me</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="projects.html" title="Os meus projetos" rel="noopener noreferrer">Projects</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="contact.html" title="Contactos" rel="noopener noreferrer">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main id="mainContent" class="pageWidth">
+<section id="project-page">
+
+            <div class="project-hero">
+
+                <span class="project-category">
+
+               3D Animation • Blender 
+
+                </span>
+
+                <h1>Haribo Gummies Animation</h1>
+
+                <p>
+
+                A 3D animation inspired by the iconic Haribo Gummy Bears, exploring modelling, animation, lighting and rendering in Blender.
+                </p>
+
+            </div>
+
+
+            <div class="hero-image">
+
+            <img src="imagens/Haribo-hero.jpg" alt="Jewelry Brand Website">
+
+            </div>
+
+
+            <div class="project-overview">
+
+        <div>
+
+            <h3>Overview</h3>
+
+            <p>
+
+            This project consisted of creating a short 3D animation inspired by Haribo Gummies. It explored modelling, materials, lighting, animation and rendering techniques using Blender to produce a playful and visually engaging result.
+            </p>
+
+        </div>
+
+    <div>
+
+        <h3>Role</h3>
+
+    <p>
+        UI Design
+
+        <br>
+
+        Brand Identity
+
+        <br>
+
+        Website Design
+
+    </p>
+
+    </div>
+
+
+        <div>
+
+            <h3>Software</h3>
+
+            <p>
+
+            Figma
+
+            <br>
+
+            Adobe Illustrator
+
+            </p>
+
+        </div>
+
+        </div>
+
+    <div class="section-divider"></div>
+
+        <section class="project-section">
+
+        <h2>The Challenge</h2>
+
+            <p>
+
+            The animation was created in Blender, from scene composition and materials to camera animation and final rendering, resulting in a colourful and dynamic promotional-style video.
+            </p>
+
+    </section>
+
+
+        <div class="gallery">
+
+            <img src="imagens/Haribo-01.jpg" alt="Jewelry Project">
+
+            <img src="imagens/Haribo-02.jpg" alt="Jewelry Project">
+
+            <img src="imagens/Haribo-03 (2).jpg" alt="Jewelry Project">
+
+        </div>
+
+        <div class="section-divider"></div>
+
+
+<section class="project-section">
+
+    <h2>The Solution</h2>
+
+    <p>
+
+    Using Blender, I modelled the gummy bear characters, applied materials and textures, and developed the complete 3D scene. Lighting, camera movements and animation were carefully adjusted to create a playful and visually engaging video. The final project was rendered as a short promotional-style animation inspired by the Haribo brand.
+    </p>
+
+</section>
+
+
+    <div class="final-video">
+
+    <video controls autoplay muted loop>
+
+        <source src="video/haribo.mp4" type="video/mp4">
+
+       
+
+    </video>
+
+</div>
+
+    <div class="back-projects">
+
+        <a href="Projects.html">
+
+        ← Back to Projects
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+            
+ <p>&copy; - All rights reserved. <b>|</b> 2026 Final Project</p>
+</footer>
+        <!-- Os ficheiro de script ficam no final da página -->
+        <script src="javascript/script.js"></script>
+        <script src="Processing/p5.js"></script>
+        <script src="Processing/p5.sound.min.js"></script>
+        <script src="Processing/sketch.js"></script>
+    </body>
+</html>

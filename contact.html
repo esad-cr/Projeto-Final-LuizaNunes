@@ -1,0 +1,138 @@
+<!-- Indica ao navegador que este é um documento HTML5 -->
+<!DOCTYPE html>
+<!-- Elemento raiz do documento. O atributo lang="pt-PT" informa que o conteúdo está em português.-->
+<html lang="pt-PT">
+    <head>
+        <!-- Contém informações sobre o documento (meta-informações, título, links para CSS e scripts). -->
+        <meta charset="UTF-8"><!-- Define a codificação para caracteres (acentuação correta) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Torna o site responsivo em dispositivos móveis -->
+        <title>Projeto Final</title>
+        <meta name="author" content="Luiza Nunes"/><!-- Define o autor do site -->
+        <meta name="description" content="Portfólio pessoal de Luiza Nunes" /><!-- Descrição da página (ajuda no SEO) -->
+        <meta name="keywords" content="ESAD.CR, Licenciatura de Mulimédia, Projecto Final" /><!-- Palavras-chave da página (ajuda no SEO) -->
+        <!-- Metadata para chamar o favicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="imagens/favicon-32.png">
+
+    </head>
+    <body>
+        <!-- Contém tudo o que será exibido na página: textos, imagens, links, etc. -->
+        <header id="topHeader" class="pageWidth">
+        <!-- Representa o cabeçalho da página ou de uma seção. Contém títulos, logotipo, menus, etc.-->
+            <nav id="mainMenu">
+                <div class="navAction">
+                    <div id="headerLogo">
+                        <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo sol.svg" alt="Portfolio"><strong>LuizaNunes</strong></a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>    
+                
+                <div class="nav__menu" id="navMenu">
+                    <ul class="nav__list">
+                        <li>
+                            
+                            <a class="nav__link active" href="index.html">Home
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="about-me.html" title="Sobre mim" rel="noopener noreferrer">About me</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="projects.html" title="Os meus projetos" rel="noopener noreferrer">Projects</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="contact.html" title="Contacto" rel="noopener noreferrer">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<main id="mainContent" class="pageWidth">
+
+    <section id="contact-page">
+
+        <div class="contact-title">
+
+        <span>CONTACT</span>
+
+        <h1>Let's Connect.</h1>
+
+        <p>
+            Thank you for visiting my portfolio. If you would like to discuss a project,
+            collaboration or internship opportunity, feel free to get in touch.
+            I would love to hear from you.
+        </p>
+
+        </div>
+
+        <div class="contact-divider"></div>
+
+        <div class="contact-grid">
+
+        <div class="contact-info">
+
+            <h3>Email</h3>
+
+            <p>
+    <a href="mailto:3230557@my.ipleiria.pt">
+        3230557@my.ipleiria.pt
+    </a>
+</p>
+        </div>
+
+    <div class="contact-info">
+
+        <h3>Location</h3>
+
+        <p>Lisbon, Portugal</p>
+
+        </div>
+
+        <div class="contact-info">
+
+            <h3>Availability</h3>
+
+            <p>Open to internships and freelance projects.</p>
+
+        </div>
+
+    </div>
+
+    <div class="contact-divider"></div>
+
+    <div class="contact-social">
+
+      <a href="https://github.com/sollnunes"
+   target="_blank"
+   rel="noopener noreferrer">
+    GitHub
+</a>
+
+        <a href="mailto:sollnunes18@gmail.com">Email</a>
+
+    </div>
+
+ </section>
+
+</main>
+
+<footer>
+            
+ <p>&copy; - All rights reserved. <b>|</b> 2026 Final Project</p>
+</footer>
+        <!-- Os ficheiro de script ficam no final da página -->
+        <script src="javascript/script.js"></script>
+        <script src="Processing/p5.js"></script>
+        <script src="Processing/p5.sound.min.js"></script>
+        <script src="Processing/sketch.js"></script>
+    </body>
+</html>
