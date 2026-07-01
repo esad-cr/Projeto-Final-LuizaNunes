@@ -165,20 +165,6 @@ color: var(--primary-color);
 /***************** largura dos elementos que compoem o body********************/
 /*Utilizando tags*/
 
-body header, body main, body footer{
-  width:100%;
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* utilizando id*/
-#topHeader, #mainContent, #mainFooter{
-  width:100%;
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
 
 /* utilizando classes*/
 .pageWidth{
@@ -243,15 +229,17 @@ h3{
 
   /*------------------ HEADER ----------*/
 #topHeader {
-  position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1002;
-    background: #F7F6F3;
+  position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+    width:100%;
+
+    background:#F7F6F3;
     border-bottom:1px solid #E8E8E8;
     box-shadow:0 4px 20px rgba(0,0,0,.04);
-
+    z-index:1002;
 }
 
 body{
@@ -259,11 +247,10 @@ body{
 }
 
 #mainMenu {
-  height: calc(var(--header-height) + 2rem);
-  width: 100%;
-  max-width:1680px;
-  margin: 0 auto;
-  padding: 0 16px;
+ max-width:1680px;
+    margin:0 auto;
+    padding:0 16px;
+    height:calc(var(--header-height) + 2rem);
 }
 
 .navBurger, 
@@ -428,10 +415,7 @@ body{
     padding: 2rem;
   }
 
-  .page-hero{
-    padding-top: 8rem;
-}
-  
+
   .flex{
     display: flex;
     gap: var(--gap, 1rem);
