@@ -249,6 +249,9 @@ h3{
     width: 100%;
     z-index: 1002;
     background: #F7F6F3;
+    border-bottom:1px solid #E8E8E8;
+    box-shadow:0 4px 20px rgba(0,0,0,.04);
+
 }
 
 body{
@@ -415,18 +418,7 @@ body{
   .nav__link:hover{
     background-color: transparent;
   }
-} 
-
-/***********mainContent***********/
-#mainContent{
-  margin-top:var(--header-height)!important;
-}
-
-@media screen and (min-width: 992px){
-  #mainContent{
-    margin-top:calc(var(--header-height)+2rem)
-  }
-}
+  } 
 
 
   /****** cards********Definir o flex/autolayout*******/
