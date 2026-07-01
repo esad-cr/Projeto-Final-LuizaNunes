@@ -17,36 +17,38 @@
     </head>
     <body>
         <!-- Contém tudo o que será exibido na página: textos, imagens, links, etc. -->
-        <header id="topHeader" class="pagewidth">
+        <header id="topHeader" class="pageWidth">
         <!-- Representa o cabeçalho da página ou de uma seção. Contém títulos, logotipo, menus, etc.-->
             <nav id="mainMenu">
                 <div class="navAction">
                     <div id="headerLogo">
                         <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo sol.svg" alt="Portfolio"><strong>LuizaNunes</strong></a>
                     </div>
-                    <div class="nav__toggle" id="nav__toggle">
-                        <id class="ri-menu-line nav__burger"></id>
-                        <id class="ri-close-line nav__close"></id>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
                     </div>
                 </div>    
                 
-                <div class="nav_menu" id="navMenu">
+                <div class="nav__menu" id="navMenu">
                     <ul class="nav__list">
                         <li>
-                            <a class="nav__link active" href="index.html"
-                            title="página principal" rel="noopener noreferrer"></a>
+                            
+                            <a class="nav__link active" href="index.html">Home
+
+                            </a>
                         </li>
                         <li>
                             <a class="nav__link" href="about-me.html" title="Sobre mim" rel="noopener noreferrer">About me</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="Projects.html" title="Os meus projetos" rel="noopener noreferrer">Projects</a>
+                            <a class="nav__link" href="projects.html" title="Os meus projetos" rel="noopener noreferrer">Projects</a>
                         </li>
                         <li>
                             <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="Contacts.html" title="Contactos" rel="noopener noreferrer">Contacts</a>
+                            <a class="nav__link" href="contacts.html" title="Contactos" rel="noopener noreferrer">Contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -88,11 +90,12 @@
 
         <footer>
             
-              <p>&copy; - All rights reserved. <b>|</b> 2026 Final Project</p>
-        </footer>
+ <p>&copy; - All rights reserved. <b>|</b> 2026 Final Project</p>
+</footer>
         <!-- Os ficheiro de script ficam no final da página -->
-        <script src="js/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha512-lbO95HE52QWwrDVEaDJmW9Xr8UIfMpRFT3akB8ett7lGfWsrGKz07L6wfwnF3KJ3T4a8cZupAKoI9Q2jH+0QIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="processing/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="javascript/script.js"></script>
+        <script src="Processing/p5.js"></script>
+        <script src="Processing/p5.sound.min.js"></script>
+        <script src="Processing/sketch.js"></script>
     </body>
 </html>
